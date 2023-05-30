@@ -1,22 +1,22 @@
 ---
-apiVersion: apps/v1
-kind: Deployment
+apiVersion:
+kind:
 metadata:
-  name: skippo-dev-landing-page
+  name:
   labels:
-    app: landing-page
+    app:
 spec:
-  replicas: 1
+  replicas:
   selector:
     matchLabels:
-      app: landing-page
+      app:
   template:
     metadata:
       labels:
-        app: landing-page
+        app:
     spec:
       containers:
-        - name: landing-page
-          image: arseniskobelev/skippo-landing-page:latest
+        - name:
+          image:
           ports:
-            - containerPort: 3000
+            - containerPort:

@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: landing-page
-          image: arseniskobelev/skippo-landing-page:f39d7443e40465daf3b5856f27bdfd1c8d6472f5
+          image: arseniskobelev/skippo-landing-page:a54f4b43582fd94b6af8d081909ef0d3c3c42871
           ports:
             - containerPort: 3000

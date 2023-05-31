@@ -22,7 +22,7 @@ spec:
             - containerPort: 5000
           volumeMounts:
             - name: skippo-data
-              mountPath: /
+              mountPath: /app/data
       volumes:
         - name: skippo-data
           emptyDir: {}

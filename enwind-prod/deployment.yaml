@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: enwind
-          image: arseniskobelev/skippo-enwind:5b98586b4c092bf480c305cc875b5874546fa635
+          image: arseniskobelev/skippo-enwind:1a16d7fdbb56951f80e2fa6738a4b4b0cb9e949c
           ports:
             - containerPort: 5000
           volumeMounts:

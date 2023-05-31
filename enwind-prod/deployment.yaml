@@ -20,3 +20,10 @@ spec:
           image: arseniskobelev/skippo-enwind
           ports:
             - containerPort: 5000
+          volumeMounts:
+            - name: skippo-data
+              mountPath: /
+      volumes:
+        - name: skippo-data
+          persistentVolumeClaim:
+            claimName: skippo-enwind-pvc

@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skippo-enwind
+  labels:
+    app: enwind
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: enwind
+  template:
+    metadata:
+      labels:
+        app: enwind
+    spec:
+      containers:
+        - name: enwind
+          image: arseniskobelev/skippo-enwind
+          ports:
+            - containerPort: 5000
